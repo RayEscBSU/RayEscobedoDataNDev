@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding-top: 70px; /* Offset for the fixed header */
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* HOME SECTION */
+#home {
+    flex-direction: column;
+
+}
+
+#home > #title {
+    font-size: 4rem;
+    padding-bottom: 50px;
+}
+
+#home > #welcome {
+    font-size: 1.5rem;
+}
+
+/* ABOUT SECTION */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 150px; /* Add space at the top for the heading */
+}
+
+#about > h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#about .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    gap: 30px;
+    height: calc(75vh - 150px); /* Adjust height to center content */
+    width: 100%;
+}
+
+#about .content > div {
+    width: 600px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    font-size: 20px;
+    background-color: #44444C; /* Optional: background color for better visibility */
+    padding: 10px; /* Optional: padding inside the divs */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SERVICES SECTION */
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#services > h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#services .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+#services .content > div {
+    width: 80%; /* Custom width */
+    height: auto; /* Adjust height as needed */
+    max-width: 800px; /* Optional: maximum width */
+    font-size: 20px;
+    background-color: #44444C; /* Optional: background color for better visibility */
+    padding: 20px; /* Optional: padding inside the divs */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PROJECTS SECTION */
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#projects > h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#projects .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+#projects .content > div {
+    width: 80%; /* Custom width */
+    height: auto; /* Adjust height as needed */
+    max-width: 800px; /* Optional: maximum width */
+    font-size: 20px;
+    background-color: #44444C; /* Optional: background color for better visibility */
+    padding: 20px; /* Optional: padding inside the divs */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTACT SECTION */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#contact > h2 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#contact .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+#contact .content > div {
+    width: 80%; /* Custom width */
+    height: auto; /* Adjust height as needed */
+    max-width: 800px; /* Optional: maximum width */
+    font-size: 20px;
+    background-color: #44444C; /* Optional: background color for better visibility */
+    padding: 20px; /* Optional: padding inside the divs */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact  a {
+    color: #00b8ff;
+    font-size: 25px;
+    background-color: transparent;
+    text-decoration: none;
+}
+#contact a:hover {
+    color: #3ce4a8;
+    background-color: transparent;
+    text-decoration: underline;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+}
