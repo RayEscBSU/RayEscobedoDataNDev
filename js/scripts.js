@@ -1,3 +1,8 @@
+// Ensure the page always starts at the top when reloaded
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
 document.addEventListener("DOMContentLoaded", function() {
     console.log("scripts.js is loaded");
 
@@ -18,22 +23,27 @@ document.addEventListener("DOMContentLoaded", function() {
     disableScroll();
 
     // Set the initial size of the title text
-    gsap.set("#title h1", { fontSize: "5rem", delay: 4});
+    gsap.set("#title h1", { fontSize: "5rem", delay: 4.5 });
 
     // Create a timeline for the animations
     let tl = gsap.timeline({
         onComplete: enableScroll // Enable scrolling when the animation completes
     });
+
     // Animate the title text
     tl.to("#title h1", {
-        duration: 1,
+        duration: 0.75,
         text: "..",
         opacity: 1,
         delay: 1,
         ease: "power2.out" // Ease for a smoother transition
     });
+    tl.to("#title h1", {
+        duration: 0.75,
+        text: "...",
+        ease: "power2.out"
+    });
 
-    // Animate the title text
     tl.to("#title h1", {
         duration: 3.5,
         text: "RAY ESCOBEDO DATA & DEVELOPMENT",
@@ -53,5 +63,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Optional: You can add a delay before enabling scroll to ensure the user sees the entire animation
-    setTimeout(enableScroll,7500 ); // 3.5s + 3s for repeats + 6s delay + additional buffer
+    setTimeout(enableScroll, 9500); // 3.5s + 3s for repeats + 6s delay + additional buffer
 });
