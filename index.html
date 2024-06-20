@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
 <body>
 <header>
     <nav>
@@ -63,14 +64,49 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="content">
-            <div><p>Andys Transmission website</p></div>
-            <div><p>Idaho State Tax Commission website</p></div>
-
-            <div><p>Idaho State Tax Commission Gentax ETL pipeline</p></div>
-
-            <div><p>Idaho State Tax Commission property tax database ETL</p></div>
-
-            <div><p>Idaho State Tax Commission property tax automating data import</p></div>
+            <div class="project-item" data-expanded="false">
+                <div class="project-content">
+                    <p>Andy's Transmission website</p>
+                </div>
+                <div class="project-expanded">
+                    <p>This project involved creating a responsive website for Andy's Transmission, focusing on showcasing their services and enhancing user experience.</p>
+                </div>
+            </div>
+            <div class="project-item" data-expanded="false">
+                <div class="project-content">
+                    <p>Idaho State Tax Commission website</p>
+                </div>
+                <div class="project-expanded">
+                    <p>Developed the official website for the Idaho State Tax Commission, ensuring accessibility and compliance with state regulations.</p>
+                </div>
+            </div>
+            <div class="project-item" data-expanded="false">
+                <div class="project-content">
+                    <p>Idaho State Tax Commission Gentax ETL pipeline</p>
+                </div>
+                <div class="project-expanded">
+                    <p>This project involves designing and implementing an ETL pipeline for the Idaho State Tax Commission using Gentax
+                        software, ensuring efficient extraction, transformation, and loading of tax data to enhance data management and reporting capabilities.</p>
+                </div>
+            </div>
+            <div class="project-item" data-expanded="false">
+                <div class="project-content">
+                    <p>Idaho State Tax Commission property tax database ETL</p>
+                </div>
+                <div class="project-expanded">
+                    <p>This initiative focuses on optimizing the property tax database management system at the Idaho State Tax Commission. It includes developing robust
+                        ETL processes to streamline data integration from various sources, ensuring accuracy and accessibility for tax administration purposes</p>
+                </div>
+            </div>
+            <div class="project-item" data-expanded="false">
+                <div class="project-content">
+                    <div><p>Idaho State Tax Commission property tax automating data import</p></div>
+                </div>
+                <div class="project-expanded">
+                    <p>This project aims to automate the import of property tax data for the Idaho State Tax Commission. It involves creating automated workflows and scripts
+                        to facilitate seamless data imports, reducing manual effort and enhancing data timeliness and reliability.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -96,6 +132,6 @@
     <p>&copy; 2024 My Website. All rights reserved.</p>
 </footer>
 
-<script src="../js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

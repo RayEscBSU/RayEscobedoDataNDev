@@ -62,6 +62,24 @@ document.addEventListener("DOMContentLoaded", function() {
         yoyo: true // Reverse animation
     });
 
+    // Expand and collapse project details
+    const projectItems = document.querySelectorAll('.project-item');
+
+    projectItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const expanded = this.getAttribute('data-expanded') === 'true';
+            const content = this.querySelector('.project-expanded');
+
+            if (!expanded) {
+                gsap.to(content, { height: 'auto', opacity: 1, duration: 0.5, ease: 'power2.inOut' });
+            } else {
+                gsap.to(content, { height: 0, opacity: 0, duration: 0.3, ease: 'power2.inOut' });
+            }
+
+            this.setAttribute('data-expanded', !expanded);
+        });
+    });
+
     // Optional: You can add a delay before enabling scroll to ensure the user sees the entire animation
     setTimeout(enableScroll, 9500); // 3.5s + 3s for repeats + 6s delay + additional buffer
 });
