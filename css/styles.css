@@ -94,7 +94,7 @@ section {
 
 #about #logo {
     position: absolute;
-    top: 10%; /* Adjust as needed */
+    top: 13%; /* Adjust as needed */
     left: 20%; /* Adjust as needed */
 }
 #about #logo img {
@@ -143,7 +143,7 @@ section {
 
 #services > h2 {
     font-size: 4rem;
-    margin-bottom: 120px;
+    margin-bottom: 20px;
 }
 
 #services .content {

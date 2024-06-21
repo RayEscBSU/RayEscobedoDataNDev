@@ -84,9 +84,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Spin the logo animation
     gsap.to("#logo", {
+        duration: 7,
         rotation: 360,
-        duration: 200,
-        repeat: -1,
-        ease: "linear"
+        repeat:-1,
     });
 });
