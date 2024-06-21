@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* https://www.gradientmagic.com/collection/popular/gradient/1571440406712 */
+/*  */
 body {
     font-family: "Space Mono", monospace;
     line-height: 1.6;
@@ -139,7 +139,7 @@ section {
 
 #services > h2 {
     font-size: 4rem;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
 }
 
 #services .content {
