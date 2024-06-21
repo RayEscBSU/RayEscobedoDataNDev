@@ -70,9 +70,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const content = this.querySelector('.project-expanded');
 
             if (!expanded) {
-                gsap.to(content, { height: 'auto', opacity: 1, duration: 0.5, ease: 'power2.inOut' });
+                gsap.to(content, { height: 'auto', opacity: 1, duration: 1, ease: 'power2.inOut' });
             } else {
-                gsap.to(content, { height: 0, opacity: 0, duration: 0.3, ease: 'power2.inOut' });
+                gsap.to(content, { height: 0, opacity: 50, duration: 1, ease: 'power2.inOut' });
             }
 
             this.setAttribute('data-expanded', !expanded);
