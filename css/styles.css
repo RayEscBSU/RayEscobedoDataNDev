@@ -1,3 +1,4 @@
+/* Ensure box-sizing includes padding and border in the element's total width and height */
 * {
     margin: 0;
     padding: 0;
@@ -73,14 +74,6 @@ section {
     font-size: 1.5rem;
 }
 
-/* SVG */
-/* #about {
-    background-image: url('../images/logo-no-background.png');
-    background-position: top left;
-    background-size: 300px;
-    background-repeat: no-repeat;
-} */
-
 /* ABOUT SECTION */
 #about {
     display: flex;
@@ -96,7 +89,9 @@ section {
     position: absolute;
     top: 13%; /* Adjust as needed */
     left: 20%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
 }
+
 #about #logo img {
     width: 200px; /* Adjust size as needed */
     height: 200px; /* Adjust size as needed */
@@ -289,10 +284,13 @@ footer {
 
 /* Logo styles */
 #logo {
-    position: top left;
+    position: absolute;
     top: 30px;
-    left: 30%;
-    width: 10px; /* Adjust the size as needed */
-    height:10px; /* Adjust the size as needed */
+    left: 30px;
     transform: translate(-50%, -50%);
+}
+
+#logo img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
 }

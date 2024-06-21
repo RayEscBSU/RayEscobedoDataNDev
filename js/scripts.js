@@ -83,9 +83,11 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(enableScroll, 9500); // 3.5s + 3s for repeats + 6s delay + additional buffer
 
     // Spin the logo animation
-    gsap.to("#logo", {
-        duration: 7,
+    gsap.to("#logo img", {
+        duration: 300,
         rotation: 360,
-        repeat:-1,
+        transformOrigin: "50% 50%",
+        repeat: -1,
+        ease: "linear"
     });
 });
