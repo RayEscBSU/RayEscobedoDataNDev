@@ -7,8 +7,8 @@
 body {
     font-family: "Space Mono", monospace;
     line-height: 1.6;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.5) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.5) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%), #989898;
+    background-blend-mode: multiply, multiply;
 }
 
 header {
@@ -48,13 +48,15 @@ main {
 }
 
 section {
-    height: 100vh;
+    height: 100vh; /* Full height of the viewport */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Centers text within the section */
     padding: 20px;
     color: white;
+    max-width: 2000px; /* Limits the maximum width of the section */
+    margin: 0 auto; /* Centers the section horizontally within its container */
 }
 
 /* HOME SECTION */
@@ -71,6 +73,14 @@ section {
     font-size: 1.5rem;
 }
 
+/* SVG */
+/* #about {
+    background-image: url('../images/logo-no-background.png');
+    background-position: top left;
+    background-size: 300px;
+    background-repeat: no-repeat;
+} */
+
 /* ABOUT SECTION */
 #about {
     display: flex;
@@ -79,6 +89,17 @@ section {
     justify-content: flex-start;
     text-align: center;
     padding-top: 150px; /* Add space at the top for the heading */
+    position: relative; /* Added to position the logo */
+}
+
+#about #logo {
+    position: absolute;
+    top: 10%; /* Adjust as needed */
+    left: 20%; /* Adjust as needed */
+}
+#about #logo img {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
 }
 
 #about > h2 {
@@ -203,7 +224,6 @@ section {
     transition: height 0.5s ease, opacity 0.3s ease;
 }
 
-
 /* CONTACT SECTION */
 #contact {
     display: flex;
@@ -263,4 +283,14 @@ footer {
     padding: 1rem 0;
     position: relative;
     width: 100%;
+}
+
+/* Logo styles */
+#logo {
+    position: top left;
+    top: 30px;
+    left: 30%;
+    width: 10px; /* Adjust the size as needed */
+    height:10px; /* Adjust the size as needed */
+    transform: translate(-50%, -50%);
 }

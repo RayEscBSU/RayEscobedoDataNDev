@@ -1,4 +1,3 @@
-// Ensure the page always starts at the top when reloaded
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 };
@@ -6,8 +5,8 @@ window.onbeforeunload = function () {
 document.addEventListener("DOMContentLoaded", function() {
     console.log("scripts.js is loaded");
 
-    // Register the TextPlugin with GSAP
-    gsap.registerPlugin(TextPlugin);
+    // Register the TextPlugin and ScrollTrigger with GSAP
+    gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
     // Disable scrolling by adding an overflow hidden style to the body
     function disableScroll() {
@@ -82,4 +81,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Optional: You can add a delay before enabling scroll to ensure the user sees the entire animation
     setTimeout(enableScroll, 9500); // 3.5s + 3s for repeats + 6s delay + additional buffer
+
+    // Spin the logo animation
+    gsap.to("#logo", {
+        rotation: 360,
+        duration: 200,
+        repeat: -1,
+        ease: "linear"
+    });
 });
