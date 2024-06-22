@@ -463,9 +463,9 @@ footer {
     nav ul {
         flex-direction: row;
     }
-    /*#about .content, #services .content, #contact .content {*/
-    /*    flex-direction: row;*/
-    /*}*/
+   #services .content, #contact .content {
+        flex-direction: column;
+    }
     #about .content > div, #services .content > div, #contact .content > div {
         width: 600px;
     }
