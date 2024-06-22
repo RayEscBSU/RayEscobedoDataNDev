@@ -70,14 +70,19 @@ document.addEventListener("DOMContentLoaded", function() {
             const content = this.querySelector('.project-expanded');
 
             if (!expanded) {
-                gsap.to(content, { height: 'auto', opacity: 1, duration: 1, ease: 'power2.inOut' });
+                gsap.set(content, { height: "auto", display: "block" });
+                let height = content.clientHeight; // Get the auto height
+                gsap.fromTo(content, { height: 0, opacity: 0 }, { height: height, opacity: 1, duration: 1, ease: 'power2.inOut' });
             } else {
-                gsap.to(content, { height: 0, opacity: 50, duration: 1, ease: 'power2.inOut' });
+                gsap.to(content, { height: 0, opacity: 0, duration: 1, ease: 'power2.inOut' }).then(() => {
+                    gsap.set(content, { display: "none" });
+                });
             }
 
             this.setAttribute('data-expanded', !expanded);
         });
     });
+
 
     // Optional: You can add a delay before enabling scroll to ensure the user sees the entire animation
     setTimeout(enableScroll, 9500); // 3.5s + 3s for repeats + 6s delay + additional buffer

@@ -12,7 +12,6 @@ body {
     background-blend-mode: multiply, multiply; */
     background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));
 }
-
 header {
     background: #333;
     color: #fff;
@@ -22,13 +21,29 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted for spacing */
+    height: 80px; /* Adjust height as needed */
+    padding: 0 20px; /* Add some padding for better spacing */
+}
+
+#homePageLogo {
+    position: relative; /* Adjusted for positioning within header */
+    height: 60px; /* Adjust height as needed to fit in the nav */
+    width: auto; /* Maintain aspect ratio */
+}
+#linkedInLogo{
+    padding-top: 10px;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 nav ul li {
@@ -65,6 +80,13 @@ section {
 #home {
     flex-direction: column;
 }
+/*#home > #homePageLogo{*/
+/*    position: absolute;*/
+/*    left: 10%; !* Center horizontally *!*/
+/*    transform: translateX(-50%); !* Adjust horizontal centering *!*/
+/*    top: 10px; !* 20px down from the top *!*/
+/*    z-index: 1000; !* Ensure it stays on top of other elements *!*/
+/*}*/
 
 #home > #title {
     font-size: 1rem;
@@ -102,6 +124,9 @@ section {
     font-size: 4rem;
     margin-bottom: 20px;
 }
+.content >div {
+    background-color: rgba(68,68,76,.65);
+}
 
 #about .content {
     display: flex;
@@ -117,7 +142,7 @@ section {
     width: 600px; /* Fixed width */
     height: 300px; /* Fixed height */
     font-size: 20px;
-    background-color: #44444C; /* Optional: background color for better visibility */
+    /*background-color: #44444C; !* Optional: background color for better visibility *!*/
     padding: 10px; /* Optional: padding inside the divs */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
     display: flex;
@@ -156,7 +181,7 @@ section {
     height: auto; /* Adjust height as needed */
     max-width: 800px; /* Optional: maximum width */
     font-size: 20px;
-    background-color: #44444C; /* Optional: background color for better visibility */
+    /*background-color: #44444C; !* Optional: background color for better visibility *!*/
     padding: 20px; /* Optional: padding inside the divs */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
     display: flex;
@@ -205,7 +230,7 @@ section {
     width: 100%;
     height: auto;
     padding: 20px;
-    background-color: #44444C;
+    /*background-color: #44444C;*/
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -215,8 +240,7 @@ section {
     height: 0;
     opacity: 0;
     overflow: hidden;
-    padding: 20px;
-    background-color: #44444C;
+    /*background-color: #44444C;*/
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: height 0.5s ease, opacity 0.3s ease;
@@ -251,7 +275,7 @@ section {
     height: auto; /* Adjust height as needed */
     max-width: 800px; /* Optional: maximum width */
     font-size: 20px;
-    background-color: #44444C; /* Optional: background color for better visibility */
+    /*background-color: #44444C; !* Optional: background color for better visibility *!*/
     padding: 20px; /* Optional: padding inside the divs */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
     display: flex;
