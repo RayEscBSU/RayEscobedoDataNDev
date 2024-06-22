@@ -1,17 +1,16 @@
-/* Ensure box-sizing includes padding and border in the element's total width and height */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*  */
+
 body {
     font-family: "Space Mono", monospace;
     line-height: 1.6;
-    /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.5) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%), #989898;
-    background-blend-mode: multiply, multiply; */
-    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%,rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%),linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%,rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%),linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%,rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%),linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%,rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%),linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%,rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%),linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%,rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%),linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%,rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%,rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%),linear-gradient(90deg, rgb(10, 17, 72),rgb(35, 148, 228));
+    background-image: linear-gradient(41deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%, rgba(31, 31, 31, 0.04) 8%, rgba(31, 31, 31, 0.04) 100%), linear-gradient(9deg, rgba(228, 228, 228, 0.04) 0%, rgba(228, 228, 228, 0.04) 62%, rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%), linear-gradient(124deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%, rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%), linear-gradient(253deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%, rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%), linear-gradient(270deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%, rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%), linear-gradient(64deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%, rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%), linear-gradient(347deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%, rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%), linear-gradient(313deg, rgba(36, 36, 36, 0.04) 0%, rgba(36, 36, 36, 0.04) 20%, rgba(91, 91, 91, 0.04) 20%, rgba(91, 91, 91, 0.04) 100%), linear-gradient(90deg, rgb(10, 17, 72), rgb(35, 148, 228));
 }
+
 header {
     background: #333;
     color: #fff;
@@ -23,17 +22,18 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjusted for spacing */
-    height: 80px; /* Adjust height as needed */
-    padding: 0 20px; /* Add some padding for better spacing */
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20px;
 }
 
 #homePageLogo {
-    position: relative; /* Adjusted for positioning within header */
-    height: 60px; /* Adjust height as needed to fit in the nav */
-    width: auto; /* Maintain aspect ratio */
+    position: relative;
+    height: 60px;
+    width: auto;
 }
-#linkedInLogo{
+
+#linkedInLogo {
     padding-top: 10px;
     align-items: center;
 }
@@ -42,8 +42,8 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -60,33 +60,35 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+#nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 main {
-    padding-top: 70px; /* Offset for the fixed header */
+    padding-top: 70px;
 }
 
 section {
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    text-align: center; /* Centers text within the section */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 20px;
     color: white;
-    max-width: 2000px; /* Limits the maximum width of the section */
-    margin: 0 auto; /* Centers the section horizontally within its container */
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 /* HOME SECTION */
 #home {
     flex-direction: column;
 }
-/*#home > #homePageLogo{*/
-/*    position: absolute;*/
-/*    left: 10%; !* Center horizontally *!*/
-/*    transform: translateX(-50%); !* Adjust horizontal centering *!*/
-/*    top: 10px; !* 20px down from the top *!*/
-/*    z-index: 1000; !* Ensure it stays on top of other elements *!*/
-/*}*/
 
 #home > #title {
     font-size: 1rem;
@@ -104,56 +106,56 @@ section {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    padding-top: 150px; /* Add space at the top for the heading */
-    position: relative; /* Added to position the logo */
+    padding-top: 150px;
+    position: relative;
 }
 
 #about #logo {
     position: absolute;
-    top: 13%; /* Adjust as needed */
-    left: 20%; /* Adjust as needed */
+    top: 13%;
+    left: 20%;
     transform: translate(-50%, -50%);
 }
 
 #about #logo img {
-    width: 200px; /* Adjust size as needed */
-    height: 200px; /* Adjust size as needed */
+    width: 200px;
+    height: 200px;
 }
 
 #about > h2 {
     font-size: 4rem;
     margin-bottom: 20px;
 }
-.content >div {
-    background-color: rgba(68,68,76,.65);
+
+.content > div {
+    background-color: rgba(68, 68, 76, .65);
 }
 
 #about .content {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     gap: 30px;
-    height: calc(75vh - 150px); /* Adjust height to center content */
+    height: calc(75vh - 150px);
     width: 100%;
 }
 
 #about .content > div {
-    width: 600px; /* Fixed width */
-    height: 300px; /* Fixed height */
+    width: 600px;
+    height: 300px;
     font-size: 20px;
-    /*background-color: #44444C; !* Optional: background color for better visibility *!*/
-    padding: 10px; /* Optional: padding inside the divs */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px; /* Add rounded corners */
+    border-radius: 15px;
 }
 
 /* SERVICES SECTION */
 #services {
-    height: 130vh; /* Full height of the viewport */
+    height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,7 +171,7 @@ section {
 
 #services .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -177,23 +179,22 @@ section {
 }
 
 #services .content > div {
-    width: 80%; /* Custom width */
-    height: auto; /* Adjust height as needed */
-    max-width: 800px; /* Optional: maximum width */
+    width: 80%;
+    height: auto;
+    max-width: 800px;
     font-size: 20px;
-    /*background-color: #44444C; !* Optional: background color for better visibility *!*/
-    padding: 20px; /* Optional: padding inside the divs */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 15px; /* Add rounded corners */
+    border-radius: 15px;
 }
 
 /* PROJECTS SECTION */
 #projects {
-    height: auto; /* Full height of the viewport */
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,27 +211,26 @@ section {
 
 #projects .content {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* Gap between project items */
+    gap: 30px;
     width: 100%;
 }
 
 .project-item {
-    width: calc(50% - 30px); /* Two columns with gap */
+    width: calc(50% - 30px);
     margin: 15px;
     transition: transform 0.3s ease;
 }
 
 .project-item:hover {
-    transform: translateY(-5px); /* Lift up on hover */
+    transform: translateY(-5px);
 }
 
 .project-content {
     width: 100%;
     height: auto;
     padding: 20px;
-    /*background-color: #44444C;*/
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -240,7 +240,6 @@ section {
     height: 0;
     opacity: 0;
     overflow: hidden;
-    /*background-color: #44444C;*/
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: height 0.5s ease, opacity 0.3s ease;
@@ -271,20 +270,18 @@ section {
 }
 
 #contact .content > div {
-    width: 80%; /* Custom width */
-    height: auto; /* Adjust height as needed */
-    max-width: 800px; /* Optional: maximum width */
+    width: 80%;
+    height: auto;
+    max-width: 800px;
     font-size: 20px;
-    /*background-color: #44444C; !* Optional: background color for better visibility *!*/
-    padding: 20px; /* Optional: padding inside the divs */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: shadow for better visibility */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 15px; /* Add rounded corners */
+    border-radius: 15px;
 }
-
 
 #contact a {
     color: #00b8ff;
@@ -317,6 +314,162 @@ footer {
 }
 
 #logo img {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px; /* Adjust the size as needed */
+    width: 200px;
+    height: 200px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* iPhone (e.g., iPhone 12, 430px x 932px) */
+@media only screen and (max-width: 430px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 999;
+    }
+    #nav-menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #nav-menu ul li {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    #nav-menu ul li a {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    #nav-toggle {
+        display: block;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    section{
+        height: 100%;
+    }
+    #home{
+        height: 75vh;
+    }
+    #about #logo {
+        position: absolute;
+        top: 13%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+    #about #logo img {
+        width: 100px;
+        height: 100px;
+    }
+    #about h2, #services h2, #contact h2 {
+        font-size: 2rem;
+    }
+    #about .content, #services .content, #contact .content {
+        flex-direction: column;
+    }
+    #about .content > div, #services .content > div, #contact .content > div {
+        width: 100%;
+        height: auto;
+    }
+    #projects{
+        padding-top: 500px;
+    }
+    .project-item {
+        width: 100%;
+    }
+}
+
+/* Small Devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: row;
+        height: auto;
+        padding: 1rem;
+    }
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 999;
+    }
+    #nav-menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #nav-menu ul li {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    #nav-menu ul li a {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    #nav-toggle {
+        display: block;
+    }
+
+    #about .content, #services .content, #contact .content {
+        flex-direction: column;
+    }
+    #about .content > div, #services .content > div, #contact .content > div {
+        width: 100%;
+        height: auto;
+    }
+    .project-item {
+        width: 100%;
+    }
+}
+
+/* Medium Devices (tablets, 601px - 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    #about .content, #services .content, #contact .content {
+        flex-direction: column;
+    }
+    #about .content > div, #services .content > div, #contact .content > div {
+        width: 100%;
+        height: auto;
+    }
+    .project-item {
+        width: 100%;
+    }
+}
+
+/* Large Devices (desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+    nav ul {
+        flex-direction: row;
+    }
+    /*#about .content, #services .content, #contact .content {*/
+    /*    flex-direction: row;*/
+    /*}*/
+    #about .content > div, #services .content > div, #contact .content > div {
+        width: 600px;
+    }
+    .project-item {
+        width: calc(50% - 30px);
+    }
 }
