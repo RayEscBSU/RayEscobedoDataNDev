@@ -354,16 +354,16 @@ footer {
     #nav-toggle {
         display: block;
     }
-    h2{
+    h2 {
         font-size: 2rem;
     }
-    p{
+    p {
         font-size: 1rem;
     }
-    section{
-        height: 100%;
+    section {
+        height: auto;
     }
-    #home{
+    #home {
         height: 75vh;
     }
     #about #logo {
@@ -386,7 +386,7 @@ footer {
         width: 100%;
         height: auto;
     }
-    #projects{
+    #projects {
         padding-top: 500px;
     }
     .project-item {
@@ -394,8 +394,8 @@ footer {
     }
 }
 
-/* iPhone (e.g., iPhone 12, 430px x 932px) */
-@media only screen and(min-width: 360px) and (max-width: 860px)  {
+/* Small Devices (e.g., tablets and small desktops, 481px to 860px) */
+@media only screen and (min-width: 481px) and (max-width: 860px) {
     header {
         flex-direction: column;
         height: auto;
@@ -428,16 +428,16 @@ footer {
     #nav-toggle {
         display: block;
     }
-    h2{
+    h2 {
         font-size: 2rem;
     }
-    p{
+    p {
         font-size: 1rem;
     }
-    section{
-        height: 100%;
+    section {
+        height: auto;
     }
-    #home{
+    #home {
         height: 75vh;
     }
     #about #logo {
@@ -460,7 +460,7 @@ footer {
         width: 100%;
         height: auto;
     }
-    #projects{
+    #projects {
         padding-top: 500px;
     }
     .project-item {
@@ -469,11 +469,11 @@ footer {
 }
 
 /* Large Devices (desktops, 769px and up) */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 861px) {
     nav ul {
         flex-direction: row;
     }
-   #services .content, #contact .content {
+    #services .content, #contact .content {
         flex-direction: column;
     }
     #about .content > div, #services .content > div, #contact .content > div {
