@@ -323,6 +323,80 @@ footer {
 /* iPhone (e.g., iPhone 12, 430px x 932px) */
 @media only screen and (max-width: 480px) {
     header {
+        flex-direction: row;
+        height: auto;
+        padding: 1rem;
+    }
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 999;
+    }
+    #nav-menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #nav-menu ul li {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+    #nav-menu ul li a {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    #nav-toggle {
+        display: block;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    section{
+        height: 100%;
+    }
+    #home{
+        height: 75vh;
+    }
+    #about #logo {
+        position: absolute;
+        top: 13%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
+    #about #logo img {
+        width: 100px;
+        height: 100px;
+    }
+    #about h2, #services h2, #contact h2 {
+        font-size: 2rem;
+    }
+    #about .content, #services .content, #contact .content {
+        flex-direction: column;
+    }
+    #about .content > div, #services .content > div, #contact .content > div {
+        width: 100%;
+        height: auto;
+    }
+    #projects{
+        padding-top: 500px;
+    }
+    .project-item {
+        width: 100%;
+    }
+}
+
+/* iPhone (e.g., iPhone 12, 430px x 932px) */
+@media only screen and(min-width: 360px) and (max-width: 860px)  {
+    header {
         flex-direction: column;
         height: auto;
         padding: 1rem;
@@ -394,72 +468,6 @@ footer {
     }
 }
 
-/*!* Small Devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {*/
-/*    header {*/
-/*        flex-direction: row;*/
-/*        height: auto;*/
-/*        padding: 1rem;*/
-/*    }*/
-/*    #nav-menu {*/
-/*        display: none;*/
-/*        flex-direction: column;*/
-/*        width: 100%;*/
-/*        background-color: #333;*/
-/*        position: absolute;*/
-/*        top: 80px;*/
-/*        left: 0;*/
-/*        z-index: 999;*/
-/*    }*/
-/*    #nav-menu ul {*/
-/*        flex-direction: column;*/
-/*        align-items: flex-start;*/
-/*    }*/
-/*    #nav-menu ul li {*/
-/*        width: 100%;*/
-/*        margin: 0;*/
-/*        padding: 1rem;*/
-/*    }*/
-/*    #nav-menu ul li a {*/
-/*        width: 100%;*/
-/*        padding: 1rem;*/
-/*        font-size: 1.2rem;*/
-/*    }*/
-/*    #nav-toggle {*/
-/*        display: block;*/
-/*    }*/
-
-/*    #about .content, #services .content, #contact .content {*/
-/*        flex-direction: column;*/
-/*    }*/
-/*    #about .content > div, #services .content > div, #contact .content > div {*/
-/*        width: 100%;*/
-/*        height: auto;*/
-/*    }*/
-/*    .project-item {*/
-/*        width: 100%;*/
-/*    }*/
-/*}*/
-
-/* Medium Devices (tablets, 601px - 768px) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-    #about .content, #services .content, #contact .content {
-        flex-direction: column;
-    }
-    #about .content > div, #services .content > div, #contact .content > div {
-        width: 100%;
-        height: auto;
-    }
-    .project-item {
-        width: 100%;
-    }
-}
 
 /* Large Devices (desktops, 769px and up) */
 @media only screen and (min-width: 769px) {
