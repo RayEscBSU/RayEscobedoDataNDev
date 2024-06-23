@@ -321,7 +321,7 @@ footer {
 /* Media Queries for Responsiveness */
 
 /* iPhone (e.g., iPhone 12, 430px x 932px) */
-@media only screen and (max-width: 7600px) {
+@media only screen and (max-width: 480px) {
     header {
         flex-direction: column;
         height: auto;
@@ -356,6 +356,9 @@ footer {
     }
     h2{
         font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
     }
     section{
         height: 100%;
