@@ -321,7 +321,7 @@ footer {
 /* Media Queries for Responsiveness */
 
 /* iPhone (e.g., iPhone 12, 430px x 932px) */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
     header {
         flex-direction: column;
         height: auto;
